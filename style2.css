@@ -1,0 +1,81 @@
+/* Estilo para el encabezado */
+#cabecera {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
+
+#titulo {
+  font-size: 24px;
+  color: #333;
+}
+
+#logotype img {
+  max-width: 100px;
+  height: auto;
+}
+
+#lema {
+  font-style: italic;
+  color: #777;
+}
+
+/* Estilo para la barra de navegación */
+.caja_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0074D9;
+  padding: 10px;
+}
+
+.botonRegistro,
+.botonInicio,
+.botonReserva,
+.botonUbicacion,
+.botonContacto,
+.botonOrigenes {
+  background-color: #0074D9;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Estilo para el contenedor de comentarios */
+.caja_comentarios {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+#area_comentario {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+.enviar {
+  background-color: #2ECC40;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Estilo para el mapa incrustado */
+.gadget_map {
+  width: 100%;
+  height: 225px;
+  border: none;
+}
+
+/* Estilo para el diseño responsive */
+@media screen and (max-width: 768px) {
+  .columna {
+    width: 100%;
+  }
+}

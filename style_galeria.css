@@ -1,0 +1,153 @@
+html,body {
+	width: 100%;
+	overflow-x:hidden;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	font-size: sans-serif;
+    background-color: wheat;
+}
+
+#cabecera{
+	position: center;
+	text-align: center;
+	font-size: 40px;
+	background-color:  #6fbec881 ;
+	width: 100%;
+	height: 250px;
+	display: flex;
+	flex-direction: column; 
+	justify-content: center; 
+	align-items: center;
+	margin: 0 auto;
+	}
+  
+  #titulo{
+	position: relative;
+	color: #005682; 
+	height: auto;
+  }
+  
+  #lema{
+	text-align: center;
+	position: relative;
+	color: black;
+	font-style: italic;
+  }
+
+  *{ margin:0;
+	padding:0;
+  }
+  
+  nav {
+	background-color: rgba(0, 0, 0, 0.767);
+	font-size: 30px;
+	
+  }
+  
+  .logo{
+	margin-top: 5px;
+  }
+  
+  nav ul {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	flex-wrap:wrap;
+	justify-content:space-between;
+  }
+  
+  nav a{
+	text-decoration: none;
+	color: white;
+	padding: 20px;
+  }
+  
+  nav a:hover {
+	color: #8dc7e4;
+  }
+  
+  nav.logo {
+	margin-right: 0px;
+  }
+  
+  nav.logo2{flex-grow:2;}
+  
+  
+  .show{color:white;
+  font-size:25px;
+  font-weight:bold;
+  margin:13px; 
+  }
+
+  .gallery {
+	display:grid;
+	width:100%;
+	grid-template-areas: "first second third";
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 5px;
+	margin: 0 auto;
+	overflow:hidden;
+	
+  }
+  .column-1 {
+	grid-area: first;
+  }
+  .column-2 {
+	grid-area: second;
+  }
+  .column-3 {
+	grid-area: third;
+  }
+  img {
+	z-index:1;
+	cursor:pointer;
+	transform:scale(0.96,0.96);
+	transition-duration:1s;
+  }
+  .image_container :hover {
+	transform: scale(1,1);
+	box-shadow: 1px 1px 1px 1px black;
+	transition-duration:1s;
+  }
+
+  .hover{
+	transition: 0.5s ease;
+  }
+  .hover:hover{
+	transform:rotateY(180deg);
+	box-shadow: 0 1px 50px 0px rgb(255, 255, 255);
+  }
+  
+  .hover:hover::before, .hover:hover::after {
+	  display: block;
+	  content: '';
+	  position: absolute;
+	  width: 250px;
+	  height: 250px;
+	  background: rgb(255, 255, 255);
+	  border-radius: 50px;
+	  z-index: -1;
+	}
+	  
+  
+  @media only screen and (max-width: 500px){
+	.gallery {
+	  grid-template-areas: 
+		"first"
+		"second"
+		"third";
+	  grid-template-columns: 1fr;
+	}
+	.image_container :hover {
+	  transform: scale(1.1,1.1);
+	  box-shadow: 1px 1px 1px 1px black;
+	  transition-duration:1s;
+	}
+  }
+  
